@@ -2,8 +2,8 @@
     <ActionBar title="Calculator - Select Number" icon="" />
 
     <StackLayout verticalAlignment="center" horizontalAlignment="center">
-    <label id="labelTitle" />
-        <TextField id="numberInput" hint="Type in number here" text="{{selectedNumber}}" keyboardType="number" class="h2"/>
-        <button text="Ok" backgroundColor="#289062" tap="sendNumberToMain" />
+        <label id="labelTitle" />
+        <TextField id="numberInput" hint="Type in number here" keyboardType="number" class="h2"/>
+        <button text="Ok" backgroundColor="#289062" tap="navigateToMainPage" />
     </StackLayout>
 </Page>

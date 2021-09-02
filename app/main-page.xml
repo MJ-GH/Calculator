@@ -12,13 +12,13 @@
         <label text="{{secondNumber}}" backgroundColor="#43b883" row="3" col="1" />
 
         <!-- Math buttons -->
-        <button text="+" backgroundColor="#289062" row="4" col="0" tap="addition" />
-        <button text="-" backgroundColor="#289062" row="4" col="1" tap="subtraction" />
-        <button text="*" backgroundColor="#289062" row="4" col="2" tap="multiplication" />
-        <button text="/" backgroundColor="#289062" row="4" col="3" tap="divide" />
+        <button text="+" backgroundColor="#289062" row="4" col="0" tap="calculate" />
+        <button text="-" backgroundColor="#289062" row="4" col="1" tap="calculate" />
+        <button text="*" backgroundColor="#289062" row="4" col="2" tap="calculate" />
+        <button text="/" backgroundColor="#289062" row="4" col="3" tap="calculate" />
 
         <!-- Result -->
-        <label text="Resultat" backgroundColor="#1c6b48" row="5" col="0" />
+        <label text="Resultat:" backgroundColor="#1c6b48" row="5" col="0" />
         <label text="{{result}}" backgroundColor="#43b883" row="5" col="1" />
 
     </GridLayout >
