@@ -65,6 +65,18 @@ export class MyViewModel extends Observable {
         Frame.topmost().navigate("main-page")
     }
 
+    addition() {
+        console.log("firstNumber: " + this.result)
+    }
+    subtraction() {
+        console.log("firstNumber: " + this.result)
+    }
+    multiplication() {
+        console.log("firstNumber: " + this.result)
+    }
+    divide() {
+        console.log("firstNumber: " + this.result)
+    }
 
 
 }

@@ -4,46 +4,22 @@
     <GridLayout columns="*, *, *, *" rows="auto, auto, auto, auto, auto, auto" backgroundColor="grey">
 
         <!-- Input -->
-        <button text="Hent 1. tal" backgroundColor="#289062" 
-         row="0" col="0" colSpan="4" tap="{{navigateToSelectNumberPage}}"
-         />
-        <label text="Tal 1:" backgroundColor="#1c6b48" 
-        row="1" col="0"
-        />
-        <label text="{{firstNumber}}" backgroundColor="#43b883" 
-        row="1" col="1"
-        />
-        <button text="Hent 2. tal" backgroundColor="#289062"
-        row="2" col="0" colSpan="4" tap="{{navigateToSelectNumberPage}}"
-        />
-        <label text="Tal 2:" backgroundColor="#1c6b48" 
-        row="3" col="0"
-        />
-        <label text="tal 2 her" backgroundColor="#43b883"
-        row="3" col="1"
-        />
+        <button text="Hent 1. tal" backgroundColor="#289062" row="0" col="0" colSpan="4" tap="{{navigateToSelectNumberPage}}" />
+        <label text="Tal 1:" backgroundColor="#1c6b48" row="1" col="0" />
+        <label text="{{firstNumber}}" backgroundColor="#43b883" row="1" col="1" />
+        <button text="Hent 2. tal" backgroundColor="#289062" row="2" col="0" colSpan="4" tap="{{navigateToSelectNumberPage}}" />
+        <label text="Tal 2:" backgroundColor="#1c6b48" row="3" col="0" />
+        <label text="{{secondNumber}}" backgroundColor="#43b883" row="3" col="1" />
 
         <!-- Math buttons -->
-        <button text="+" backgroundColor="#289062"
-        row="4" col="0"
-        />
-        <button text="-" backgroundColor="#289062"
-        row="4" col="1"
-        />
-        <button text="*" backgroundColor="#289062"
-        row="4" col="2"
-        />
-        <button text="/" backgroundColor="#289062"
-        row="4" col="3"
-        />
+        <button text="+" backgroundColor="#289062" row="4" col="0" tap="{{addition}}" />
+        <button text="-" backgroundColor="#289062" row="4" col="1" tap="{{subtraction}}" />
+        <button text="*" backgroundColor="#289062" row="4" col="2" tap="{{multiplication}}" />
+        <button text="/" backgroundColor="#289062" row="4" col="3" tap="{{divide}}" />
 
         <!-- Result -->
-        <label text="Resultat" backgroundColor="#1c6b48" 
-        row="5" col="0"
-        />
-        <label text="resultat her" backgroundColor="#43b883" 
-        row="5" col="1"
-        />
+        <label text="Resultat" backgroundColor="#1c6b48" row="5" col="0" />
+        <label text="{{result}}" backgroundColor="#43b883" row="5" col="1" />
 
     </GridLayout >
 
