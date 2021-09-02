@@ -1,8 +1,9 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" backgroundColor="grey">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" backgroundColor="grey">
     <ActionBar title="Calculator - Select Number" icon="" />
 
     <StackLayout verticalAlignment="center" horizontalAlignment="center">
-        <TextField hint="Type in number here" text="{{selectedNumber}}" class="h2"/>
-        <button text="Ok" backgroundColor="#289062" tap="{{sendNumberToMain}}" />
+    <label id="labelTitle" />
+        <TextField id="numberInput" hint="Type in number here" text="{{selectedNumber}}" keyboardType="number" class="h2"/>
+        <button text="Ok" backgroundColor="#289062" tap="sendNumberToMain" />
     </StackLayout>
 </Page>

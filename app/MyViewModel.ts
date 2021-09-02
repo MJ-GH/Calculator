@@ -18,7 +18,7 @@ export class MyViewModel extends Observable {
     }
     set myNumber(v: MyNumber) {
         this._myNumber = v
-        this.notifyPropertyChange("myNumber", v)
+        // this.notifyPropertyChange("myNumber", v)
     }
     get firstNumber(): number {
         return this._firstNumber
@@ -49,34 +49,32 @@ export class MyViewModel extends Observable {
         // this.notifyPropertyChange("selectedNumber", v)
     }
 
-    navigateToSelectNumberPage() {
-        Frame.topmost().navigate("selectNumber-page")
-    }
+    // navigateToSelectNumberPage() {
+    //     Frame.topmost().navigate("selectNumber-page")
+    // }
 
-    sendNumberToMain() {
-        // console.log(this.myNumber)
-        // console.log(this.myNumber.number)
-        // console.log(this.firstNumber)
-        console.log("selectednumber" + this.selectedNumber)
-        console.log("firstNumber" + this.firstNumber)
-        this.firstNumber = this.selectedNumber
-        console.log("firstNumber" + this.firstNumber)
+    // sendNumberToMain() {
+    //     // console.log("selectednumber" + this.selectedNumber)
+    //     // console.log("firstNumber" + this.firstNumber)
+    //     this.firstNumber = this.selectedNumber
+    //     // console.log("priv: " + this._firstNumber)
+    //     // console.log("firstNumber" + this.firstNumber)
 
-        Frame.topmost().navigate("main-page")
-    }
+    //     // Frame.topmost().navigate("main-page")
+    // }
 
-    addition() {
-        console.log("firstNumber: " + this.result)
-    }
-    subtraction() {
-        console.log("firstNumber: " + this.result)
-    }
-    multiplication() {
-        console.log("firstNumber: " + this.result)
-    }
-    divide() {
-        console.log("firstNumber: " + this.result)
-    }
+    // addition() {
+    //     console.log("result: " + this.result)
+    // }
+    // subtraction() {
+    //     console.log("result: " + this.result)
+    // }
+    // multiplication() {
+    //     console.log("result: " + this.result)
+    // }
+    // divide() {
+    //     console.log("result: " + this.result)
+    // }
 
 
 }
